@@ -1,0 +1,34 @@
+﻿@model EntityLayer.Concrete.Product
+@{
+    ViewData["Title"] = "UpdateProduct";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Ürün Düzenleme Kaydı</h4>
+            <form class="forms-sample" method="post">
+              
+                <div class="form-group">
+                    @Html.HiddenFor(X=>X.ProductId)
+                    <label for="exampleInputName">Ürün Adı</label>
+                    <input type="text" class="form-control" asp-for="ProductName">
+                </div>
+                <div class="form-group">
+
+                    <label for="exampleInputPrice">Ürün Fiyatı</label>
+                    <input type="text" class="form-control" asp-for="ProductPrice">
+                </div>
+                <div class="form-group">
+
+                    <label for="exampleInputStock">Stok Sayısı</label>
+                    <input type="text" class="form-control" asp-for="ProductStock">
+                </div>
+
+                <button type="submit" class="btn btn-outline-success me-2">Düzenle</button>
+            </form>
+        </div>
+    </div>
+</div>
+

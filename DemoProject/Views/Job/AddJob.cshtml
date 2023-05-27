@@ -1,0 +1,24 @@
+﻿@model EntityLayer.Concrete.Job
+@{
+    ViewData["Title"] = "AddJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Meslek Ekleme Kaydı</h4>
+            <form class="forms-sample" method="post">
+                <div class="form-group">
+
+                    <label for="exampleInputName">Meslek Adı</label>
+                    <input type="text" class="form-control" asp-for="JobName">
+                </div>
+              
+
+                <button type="submit" class="btn btn-outline-success me-2">Ekle</button>
+            </form>
+        </div>
+    </div>
+</div>
+
